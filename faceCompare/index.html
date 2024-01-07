@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b85dac41f2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap&amp;subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="imageCheckSection">
+        <div class="images-container">
+            <div class="images">
+                <div class="image-drop-area">
+                    <!-- <p>Only pics allowed ( .png, .jpg, .jpeg )</p> -->
+                    <div class="container">
+                        <div class="avatar-upload">
+                            <div class="avatar-preview">
+                                <div id="human-icon" class="human-icon"></div>
+                                <div class="imagePreview" style="">
+                                </div>
+                                <input type="hidden" id="file1" class="hidden" value="">
+                            </div>
+                            <div class="avatar-edit">
+
+                                <input type='file' id="firstImage" value="Select image" class="imageUpload"
+                                    accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="firstImage">Fayl yüklə</label>
+                                <div id="firstImageName" class="fileInfo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-drop-area">
+                    <!-- <p>Only pics allowed ( .png, .jpg, .jpeg )</p> -->
+                    <div class="container">
+                        <div class="avatar-upload">
+                            <div class="avatar-preview">
+                                <div id="human-icon" class="human-icon"></div>
+                                <div class="imagePreview" style="">
+                                </div>
+                                <input type="hidden" id="file2" class="hidden" value="">
+                            </div>
+                            <div class="avatar-edit">
+                                <input type="file" id="secondImage" class="imageUpload"
+                                    accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="secondImage">Fayl yüklə</label>
+                                <div id="secondImageName" class="fileInfo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="check-button" id="checkButton">Müqayisə et</button>
+        </div>
+        <div id="loader-overlay">
+            <div id="loader"></div>
+        </div>
+        <div class="result-container" id="resultBox">
+            <div class="main-result" id="main-result"></div>
+            <div class="result">
+                <div id="similarity-container">
+                    <p>Oxşarlıq: </p>
+                    <span id="similarity"></span>
+                </div>
+                <div id="glasses-container">
+                    <p>Eynək: </p>
+                    <span id="glasses"></span>
+                </div>
+                <div id="liveness-container">
+                    <p>Canlılıq: </p>
+                    <span id="liveness"></span>
+                </div>
+                <div id="direction-container">
+                    <p>İstiqamət: </p>
+                    <span id="direction"></span>
+                </div>
+                <div id="eyes-container">
+                    <p>Gözlər: </p>
+                    <span id="eyes"></span>
+                </div>
+                <span></span>
+            </div>
+
+        </div>
+        <div id="error"></div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

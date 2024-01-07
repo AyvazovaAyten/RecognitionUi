@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  frontend:
+    image: ayvazovaaytan/recognition:latest
+    ports:
+      - "4000:80"
